@@ -9,9 +9,7 @@ const domain = "https://codefather.cn";
 const tags = ["程序员", "编程", "计算机"];
 
 export default defineConfig({
-  base: "/blog/",
-  theme: "reco",
-  title: "鱼皮的编程宝典",
+  title: "wodefather",
   description: "贴心的编程学习路线，全面的编程知识百科",
   head: [
     // 站点图标
@@ -26,21 +24,22 @@ export default defineConfig({
       },
     ],
     // 百度统计
-    [
-      "script",
-      {},
-      `
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?2675818a983a3131404cee835018f016";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-      `,
-    ],
+    // [
+    //   "script",
+    //   {},
+    //   `
+    //     var _hmt = _hmt || [];
+    //     (function() {
+    //       var hm = document.createElement("script");
+    //       hm.src = "https://hm.baidu.com/hm.js?2675818a983a3131404cee835018f016";
+    //       var s = document.getElementsByTagName("script")[0];
+    //       s.parentNode.insertBefore(hm, s);
+    //     })();
+    //   `,
+    // ],
   ],
-  permalink: "/:slug",
+  // permalink: "/:slug",
+  // permalink: "/:year/:month/:day/:slug",
 
   // 监听文件变化，热更新
   extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
@@ -123,8 +122,8 @@ export default defineConfig({
     lastUpdated: "最近更新",
 
     // GitHub 仓库位置
-    repo: "liyupi/codefather",
-    docsBranch: "master",
+    // repo: "liyupi/codefather",
+    docsBranch: "base",
 
     // 编辑链接
     editLinks: true,

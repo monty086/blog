@@ -15,8 +15,7 @@
     "vuepress-plugin-feed": "^0.1.9",
     "vuepress-plugin-seo": "^0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-plugin-tags": "^1.0.2",
-    "vuepress-theme-reco": "^1.6.17"
+    "vuepress-plugin-tags": "^1.0.2"
   },
   "dependencies": {
     "vuepress-plugin-code-copy": "^1.0.6",
